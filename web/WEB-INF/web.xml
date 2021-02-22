@@ -9,10 +9,25 @@
         <param-value>471964854@qq.com</param-value>
     </context-param>
     <listener>
-        <listener-class>com.nero.java.jsp.listener.ServletListener</listener-class>
+        <listener-class>com.nero.java.jsp.listener.MyServletRequestListener</listener-class>
     </listener>
     <listener>
-        <listener-class>com.nero.java.jsp.listener.SessionAttributeListener</listener-class>
+        <listener-class>com.nero.java.jsp.listener.MyServletRequestAttributeListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.nero.java.jsp.listener.MyHttpSessionListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.nero.java.jsp.listener.MyHttpSessionAttributeListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.nero.java.jsp.listener.MyHttpSessionActivationListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.nero.java.jsp.listener.MyServletContextListener</listener-class>
+    </listener>
+    <listener>
+        <listener-class>com.nero.java.jsp.listener.MyServletContextAttributeListener</listener-class>
     </listener>
     <servlet>
         <servlet-name>Ch3 Beer</servlet-name>
